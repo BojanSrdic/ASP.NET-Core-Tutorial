@@ -32,7 +32,7 @@ namespace Identity_Managment_API.Controllers
 		{
 			var result = _authService.LoginUser(model);
 
-			return Ok(new { token = result.Result });
+			return Ok(result.Result);
 		}
 
 		// GET: api/authentication/

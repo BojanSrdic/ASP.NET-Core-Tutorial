@@ -1,4 +1,5 @@
 ﻿using Identity_Managment_API.DataTransferObjects;
+using Identity_Managment_API.IdenittyManagment;
 using Identity_Managment_API.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -49,7 +50,7 @@ namespace Identity_Managment_API.Services
 			// ToDo: Send Confirmation Email
 
 		}
-		public async Task<string> LoginUser(SignIn model)
+		public async Task<JsonWebToken> LoginUser(SignIn model)
 		{
 			var user = await _userManager.FindByEmailAsync(model.Email);
 			var role = await _userManager.GetRolesAsync(user);
@@ -80,11 +81,12 @@ namespace Identity_Managment_API.Services
 				var secutiryToken = tokenHandler.CreateToken(tokenDescriptor);
 				var token = tokenHandler.WriteToken(secutiryToken);
 
-				return token;
+				JsonWebToken jwt = new JsonWebToken { Token = token };
+
+				return jwt;
 			}
 
 			throw new Exception("Invalid data, check email and password");
-			//return "Invalid data, check email and password";
 		}
 	}
 }

@@ -1,4 +1,5 @@
 using Identity_Managment_API.DbConnection;
+using Identity_Managment_API.ExceptionHandler;
 using Identity_Managment_API.IdenittyManagment;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -51,6 +52,8 @@ namespace Identity_Managment_API
 				app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Identity_Managment_API v1"));
 			}
 
+			app.ConfigureExceptionHandler();
+
 			var scope = app.ApplicationServices.CreateScope();
 			var context = scope.ServiceProvider.GetService<DatabaseContext>();
 			_ = AddTestDataAsync(serviceProvider, context);
@@ -58,6 +61,8 @@ namespace Identity_Managment_API
 			app.UseHttpsRedirection();
 
 			app.UseRouting();
+
+			app.UseCors();
 
 			app.UseAuthentication();
 			app.UseAuthorization();
