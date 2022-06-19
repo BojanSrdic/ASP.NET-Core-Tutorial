@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel Management API", "Excel Management API\Excel Management API.csproj", "{A49092D7-9A15-43B3-BF69-BFF91576CC63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A49092D7-9A15-43B3-BF69-BFF91576CC63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A49092D7-9A15-43B3-BF69-BFF91576CC63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A49092D7-9A15-43B3-BF69-BFF91576CC63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A49092D7-9A15-43B3-BF69-BFF91576CC63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96595FFD-2121-4909-8FE2-2F247851DEA6}
+	EndGlobalSection
+EndGlobal
