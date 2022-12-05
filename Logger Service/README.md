@@ -13,9 +13,12 @@ In the LoggerService project right click on the Dependencies and then click on t
 This would automatically add the Contracts reference to the main project because we already have a LoggerService referenced inside.
 
 
-LoggerService contain four methods for logging:
+How to configure it in our project?
 
-Info messages
-Debug messages
-Warning messages
-And error messages
+## Modify Program.cs class
+
+using NLog;
+var builder = WebApplication.CreateBuilder(args);
+LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
+
+...
