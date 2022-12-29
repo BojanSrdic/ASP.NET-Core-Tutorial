@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatR CRUD API", "MediatR-CRUD\MediatR CRUD API.csproj", "{9E5D525F-B2D1-424D-868C-A68C59150FF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD API MediatR Library", "CRUD API MediatR Library\CRUD API MediatR Library.csproj", "{118945BB-B25C-4C46-8214-11FCFA923794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E5D525F-B2D1-424D-868C-A68C59150FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E5D525F-B2D1-424D-868C-A68C59150FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E5D525F-B2D1-424D-868C-A68C59150FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E5D525F-B2D1-424D-868C-A68C59150FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118945BB-B25C-4C46-8214-11FCFA923794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118945BB-B25C-4C46-8214-11FCFA923794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118945BB-B25C-4C46-8214-11FCFA923794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118945BB-B25C-4C46-8214-11FCFA923794}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {593DBB24-E9BB-41FE-A696-AB6D6056A3DE}
+		SolutionGuid = {340F5EEC-69F1-40CF-9C19-E349356405B3}
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MediatR_CRUD
+namespace CRUD_API_MediatR_Library
 {
 	public class Program
 	{
