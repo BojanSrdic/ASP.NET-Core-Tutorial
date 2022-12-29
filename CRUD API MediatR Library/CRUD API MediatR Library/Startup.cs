@@ -1,4 +1,5 @@
 using MediatR;
+using MediatR_CRUD.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -24,6 +25,7 @@ namespace CRUD_API_MediatR_Library
 			services.AddControllers();
 
 			services.AddMediatR(typeof(Startup));
+			services.AddSingleton<FakeDataStore>();
 
 			services.AddSwaggerGen(c =>
 			{
