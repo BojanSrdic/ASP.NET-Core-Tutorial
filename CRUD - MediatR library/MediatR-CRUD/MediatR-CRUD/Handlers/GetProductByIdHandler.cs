@@ -1,0 +1,23 @@
+﻿using MediatR;
+using MediatR_CRUD.Data;
+using MediatR_CRUD.Models;
+using MediatR_CRUD.Queries;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace MediatR_CRUD.Handlers
+{
+	public class GetProductByIdHandler : IRequestHandler<GetProductByIdQuery, Product>
+    {
+        private readonly FakeDataStore _fakeDataStore; 
+
+        public GetProductByIdHandler(FakeDataStore fakeDataStore) => _fakeDataStore = fakeDataStore;
+
+        public async Task<Product> Handle(GetProductByIdQuery request, CancellationToken cancellationToken) =>
+            await _fakeDataStore.GetProductById(request.Id);
+
+    }
+}
